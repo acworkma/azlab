@@ -1,7 +1,7 @@
 #variables
 source variables.azcli
 
-echo "create private dns"
+echo "Create Private DNS"
 #create private dns
 az network private-dns zone create \
 --resource-group $rg \

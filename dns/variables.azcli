@@ -7,8 +7,8 @@ loc="westus2"
 rg="dnslab"
 
 #vnets
-hub="hub"
-spoke="spoke"
+hub="Hub"
+spoke="Spoke"
 subnet="default"
 
 #vms
@@ -17,7 +17,3 @@ pass="AzDnsLab2020"
 
 #private dns
 pdns="private.dnslab.com"
-
-
-#array of locations to build VM's
-#centralus,eastus,eastus2,westus,westus2,northcentralus,southcentralus,westcentralus

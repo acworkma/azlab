@@ -2,7 +2,7 @@
 #variables
 source variables.azcli
 
-echo "creating VMs"
+echo "Creating VMs"
 
 #create hub vm
 az vm create \

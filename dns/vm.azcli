@@ -2,6 +2,8 @@
 #variables
 source variables.azcli
 
+echo "creating VMs"
+
 #create hub vm
 az vm create \
  --name $hub \
@@ -14,7 +16,8 @@ az vm create \
  --authentication-type all \
  --nsg $hub \
  --nsg-rule ssh \
- --image UbuntuLTS
+ --image UbuntuLTS \
+ --output none
 
 #create spoke vm
 az vm create \
@@ -28,4 +31,5 @@ az vm create \
  --authentication-type all \
  --nsg $spoke \
  --nsg-rule ssh \
- --image UbuntuLTS
+ --image UbuntuLTS \
+ --output none

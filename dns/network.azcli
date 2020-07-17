@@ -1,6 +1,7 @@
 #variables
 source variables.azcli
 
+echo "Building VNets"
 #create hub
 az network vnet create \
   --name $hub \
@@ -8,7 +9,8 @@ az network vnet create \
   --location $loc \
   --address-prefix 10.64.0.0/16 \
   --subnet-name $subnet \
-  --subnet-prefixes 10.64.0.0/24 
+  --subnet-prefixes 10.64.0.0/24 \
+  --output none
 
 #create spoke
 az network vnet create \
@@ -17,4 +19,5 @@ az network vnet create \
   --location $loc \
   --address-prefix 10.65.0.0/16 \
   --subnet-name $subnet \
-  --subnet-prefixes 10.65.0.0/24
+  --subnet-prefixes 10.65.0.0/24 \
+  --output none

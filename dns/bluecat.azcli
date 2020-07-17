@@ -15,9 +15,18 @@
 source variables.azcli
 
 az vm create \
-  --resource-group $rg \
   --name bluecat \
+  --resource-group $rg \
+  --location $loc \
+  --vnet-name $hub \
+  --subnet $subnet \
+  --admin-username $admin \
+  --admin-password $pass \
+  --authentication-type all \
+  --nsg bluecat \
+  --nsg-rule ssh \
   --image bluecat:bluecat-dns-for-azure:bddsforazure920:9.2.0 \
   --plan-name bddsforazure920 \
   --plan-product bluecat-dns-for-azure \
-  --plan-publisher bluecat
+  --plan-publisher bluecat \
+  --output none

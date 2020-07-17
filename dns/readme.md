@@ -12,4 +12,5 @@ group.azcli - creates the resource group
 network.azcli - create the network for the vm's
 dns.azcli - create the private dns and link to vnets
 vm.azcli - create the vm's
+bluecat.azcli - create the bluecat appliance
 cleanup.azcli - delete the resource group

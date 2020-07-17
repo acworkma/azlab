@@ -1,2 +1,5 @@
+#variables
+source variables.azcli
+
 #if you can't delete it you don't understand it
-az group  delete --location $loc --name $rg
+az group delete --resource-group $rg

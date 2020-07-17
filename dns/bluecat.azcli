@@ -1,0 +1,23 @@
+#Read!! There are steps that have to be interactively run once per subscription to get this to work
+#they are currently commented out
+
+#first run
+  #find the image
+  #az vm image list --all --publisher bluecat
+
+  #check to see if it has a license
+  #az vm image show --location westus2 --urn bluecat:bluecat-dns-for-azure:bddsforazure920:9.2.0
+
+  #plan is not null so it does. Have to accept the license once per sub
+  #az vm image accept-terms --urn bluecat:bluecat-dns-for-azure:bddsforazure920:9.2.0
+
+#variables
+source variables.azcli
+
+az vm create \
+  --resource-group $rg \
+  --name bluecat \
+  --image bluecat:bluecat-dns-for-azure:bddsforazure920:9.2.0 \
+  --plan-name bddsforazure920 \
+  --plan-product bluecat-dns-for-azure \
+  --plan-publisher bluecat

@@ -1,0 +1,31 @@
+
+#variables
+source variables.azcli
+
+#create hub vm
+az vm create \
+ --name $hub \
+ --resource-group $rg \
+ --location $loc \
+ --subnet $subnet \
+ --vnet-name $hub \
+ --admin-username $admin \
+ --admin-password $pass \
+ --authentication-type all \
+ --nsg $hub \
+ --nsg-rule ssh \
+ --image UbuntuLTS
+
+#create spoke vm
+az vm create \
+ --name $spoke \
+ --resource-group $rg \
+ --location $loc \
+ --subnet $subnet \
+ --vnet-name $spoke \
+ --admin-username $admin \
+ --admin-password $pass \
+ --authentication-type all \
+ --nsg $spoke \
+ --nsg-rule ssh \
+ --image UbuntuLTS

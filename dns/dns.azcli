@@ -1,0 +1,23 @@
+#variables
+source variables.azcli
+
+#create private dns
+az network private-dns zone create \
+--resource-group $rg \
+--name $pdns
+
+#link to hub as resolution
+az network private-dns link vnet create \
+ --name $hub \
+ --registration-enabled false \
+ --resource-group $rg \
+ --virtual-network $hub \
+ --zone-name $pdns
+
+#link to spoke as registration
+az network private-dns link vnet create \
+ --name $spoke \
+ --registration-enabled true \
+ --resource-group $rg \
+ --virtual-network $spoke \
+ --zone-name $pdns

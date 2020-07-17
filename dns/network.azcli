@@ -1,0 +1,20 @@
+#variables
+source variables.azcli
+
+#create hub
+az network vnet create \
+  --name $hub \
+  --resource-group $rg \
+  --location $loc \
+  --address-prefix 10.64.0.0/16 \
+  --subnet-name $subnet \
+  --subnet-prefixes 10.64.0.0/24 
+
+#create spoke
+az network vnet create \
+  --name $spoke \
+  --resource-group $rg \
+  --location $loc \
+  --address-prefix 10.65.0.0/16 \
+  --subnet-name $subnet \
+  --subnet-prefixes 10.65.0.0/24

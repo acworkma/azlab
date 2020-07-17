@@ -1,4 +1,4 @@
-# Canary
+# DNS
 DNStesting project
 
 ## Objective

@@ -1,0 +1,12 @@
+# https://docs.microsoft.com/en-us/cli/azure/appservice/ase?view=azure-cli-latest
+
+#variables
+source variables.azcli
+
+echo "Building ASE"
+#build ase
+az appservice ase create \
+  --name $rg \
+  --resource-group $rg \
+  --vnet-name $vnet \
+  --subnet $subnet

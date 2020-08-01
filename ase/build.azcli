@@ -1,0 +1,6 @@
+# build the entire build
+
+source resourcegroup.azcli
+source network.azcli
+source dns.azcli
+source vm.azcli

@@ -1,0 +1,20 @@
+
+#variables
+source variables.azcli
+
+echo "Creating VM"
+
+#create hub vm
+az vm create \
+ --name $vnet \
+ --resource-group $rg \
+ --location $loc \
+ --subnet $subnet \
+ --vnet-name $hub \
+ --admin-username $admin \
+ --admin-password $pass \
+ --authentication-type all \
+ --nsg $hub \
+ --nsg-rule ssh \
+ --image UbuntuLTS \
+ --output none

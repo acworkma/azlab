@@ -1,0 +1,16 @@
+#variables to be included in all files
+
+#primary location
+loc="westus2"
+
+#resource group
+rg="cbotlab"
+
+#vnets
+vnet="cbotlab"
+subnet="default"
+
+#vms
+admin="azureadmin"
+pass="AzBotLab2020"
+

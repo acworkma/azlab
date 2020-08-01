@@ -1,0 +1,6 @@
+
+
+az bot create --appid
+              --kind {registration, webapp}
+              --name
+              --resource-group

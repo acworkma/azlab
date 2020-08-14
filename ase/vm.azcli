@@ -2,9 +2,20 @@
 #variables
 source variables.azcli
 
+# list sku's
+# az vm list-skus --location westus2
+
 echo "Creating VM"
 
-#create hub vm
+storageProfile": {
+                    "imageReference": {
+                        "publisher": "MicrosoftWindowsDesktop",
+                        "offer": "Windows-10",
+                        "sku": "20h1-pro",
+                        "version": "latest"
+
+
+#create linux vm
 az vm create \
  --name $vnet \
  --resource-group $rg \

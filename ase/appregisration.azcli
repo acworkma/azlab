@@ -6,8 +6,7 @@ source variables.azcli
 # app registration
 # debating whether to script building and deleting every time or leave it built
 # going with leaving built for now
+# after running the command the appID for bot
 
-
-echo "Application Registration"
+echo "Application Registration. Copy appID for bot stage"
 az ad app create --display-name $rg
-exit

@@ -6,11 +6,12 @@ source variables.azcli
 echo "Building Bot"
 
 az bot create \
-  --appid $rg \
+  --appid [] \
   --kind webapp \
   --name $rg \
   --resource-group $rg \
   --echo true \
   --lang Csharp \
   --sku F0 \
+  --password $pass \
   --output none

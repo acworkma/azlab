@@ -9,4 +9,6 @@ az appservice ase create \
   --name $rg \
   --resource-group $rg \
   --vnet-name $vnet \
-  --subnet $subnet
+  --subnet $subnet \
+  --virtual-ip-type Internal \
+  --output none

@@ -1,0 +1,13 @@
+#
+
+#variables
+source variables.azcli
+
+# app registration
+# debating whether to script building and deleting every time or leave it built
+# going with leaving built for now
+
+
+echo "Application Registration"
+az ad app create --display-name $rg
+exit

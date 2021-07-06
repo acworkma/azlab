@@ -1,0 +1,19 @@
+#variables to be included in all files
+
+#primary location
+loc="westus2"
+
+#resource group
+rg="dnslab"
+
+#vnets
+hub="Hub"
+spoke="Spoke"
+subnet="default"
+
+#vms
+admin="azureadmin"
+pass="AzDnsLab2020"
+
+#private dns
+pdns="private.dnslab.com"

@@ -1,0 +1,10 @@
+#variables
+source variables.azcli
+
+#create a cluster using kubenet
+az aks create\
+  --resource-group $rg\
+  --name $kubenet\
+  --node-count 3\
+  --enable-addons monitoring\
+  --generate-ssh-keys

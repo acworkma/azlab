@@ -1,0 +1,15 @@
+#variables to be included in all files
+
+#primary location
+loc="westus2"
+
+#resource group
+rg="aks"
+
+#names for different cluster types
+kubenet="aksKubenet"
+
+#vnets
+hub="Hub"
+spoke="Spoke"
+subnet="default"

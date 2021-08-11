@@ -8,8 +8,3 @@ rg="aks"
 
 #names for different cluster types
 kubenet="aksKubenet"
-
-#vnets
-hub="Hub"
-spoke="Spoke"
-subnet="default"

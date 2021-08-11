@@ -1,0 +1,10 @@
+#variables
+source variables.azcli
+
+#kubectl install if you don't have it
+#sudo az aks install-cli
+
+#connect to the cluster
+az aks get-credentials\
+  --resource-group $rg\
+  --name $kubenet

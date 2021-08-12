@@ -1,10 +1,11 @@
 #variables
 source variables.azcli
 
-#create a cluster using kubenet
+#create cluster across availability zones using kubenet
 az aks create\
   --resource-group $rg\
   --name $kubenet\
   --node-count 3\
+  --zone 3\
   --enable-addons monitoring\
   --generate-ssh-keys

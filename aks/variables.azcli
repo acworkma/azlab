@@ -4,7 +4,7 @@
 loc="westus2"
 
 #resource group
-rg="aks"
+rg="aksaz"
 
 #names for different cluster types
 kubenet="aksKubenet"

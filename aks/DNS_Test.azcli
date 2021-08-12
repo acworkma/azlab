@@ -1,0 +1,26 @@
+#example of how to deploy nginx for dns testing
+
+Connect to the cluster using the connect script
+
+Run the deployment:
+kubectl create deployment nginx --image=nginx
+
+Check it deployed:
+kubectl get deployments
+
+get the name of the running pod:
+kubectl get pods
+
+Exec into the pod:
+kubectl exec -it <pod name you got from step above> bash
+kubectl exec -it nginx-6799fc88d8-4sbrn bash
+
+Install Dig:
+apt-get update
+apt-get install dnsutils
+
+Query DNS:
+for ((i=1;i<=20;i++)); do dig www.microsoft.com |egrep 'Query time' ; done
+
+Remove the deployment:
+kubectl delete deployment nginx

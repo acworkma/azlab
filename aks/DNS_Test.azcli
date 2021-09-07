@@ -22,5 +22,8 @@ apt-get install dnsutils
 Query DNS:
 for ((i=1;i<=20;i++)); do dig www.microsoft.com |egrep 'Query time' ; done
 
+Query Local DNS:
+for ((i=1;i<=20;i++)); do dig metrics-server.kube-system.svc.cluster.local @<coreDNS pod IP> | egrep 'Query time' ; done
+
 Remove the deployment:
 kubectl delete deployment nginx

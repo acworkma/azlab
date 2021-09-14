@@ -5,7 +5,7 @@ source variables.azcli
 echo "APIM"
 
 az apim create\
-    --name acapim\
+    --name $apim\
     --publisher-email adworkma@microsoft.com\
     --publisher-name MSFT\
     --resource-group $rg\

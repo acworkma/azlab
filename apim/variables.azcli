@@ -6,4 +6,5 @@ loc="westus2"
 #resource group
 rg="apim"
 
-#vnet
+#APIMs
+$apim="apim"

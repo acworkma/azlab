@@ -1,6 +1,6 @@
-#! /usr/bin/zsh
+#! /usr/bin/zsh 
 #variables
-source variables.azcli
+. variables.azcli
 #
 #create the resource group
 echo "Resource Group"

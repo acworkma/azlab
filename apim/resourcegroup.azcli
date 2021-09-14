@@ -1,8 +1,12 @@
-#! /usr/bin/zsh
 #variables
-source variables.azcli
+#primary location
+loc="westus2"
+#resource group
+rg="apim"
 #
+echo $rgexit
+
 #create the resource group
 echo "Resource Group"
-
+#
 az group create --location $loc --name $rg --output none

@@ -1,8 +1,9 @@
-#! /usr/bin/zsh
-#variables
-source variables.azcli
-#
-#create the resource group
-echo "Resource Group"
+#variables to be included in all files
 
-az group create --location $loc --name $rg --output none
+#primary location
+loc="westus2"
+
+#resource group
+rg="apim"
+
+#vnet

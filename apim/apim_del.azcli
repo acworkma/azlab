@@ -2,7 +2,7 @@
 source variables.azcli
 
 #create APIM
-echo "APIM"
+echo "APIM Delete"
 
 az apim delete\
     --name $apim\

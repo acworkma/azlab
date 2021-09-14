@@ -1,0 +1,16 @@
+#variables
+source variables.azcli
+
+#create APIM
+echo "APIM"
+
+az apim create\
+    --name acapim\
+    --publisher-email adworkma@microsoft.com\
+    --publisher-name MSFT\
+    --resource-group $rg\
+    --sku-capacity 1\
+    --sku-name Premium\
+    --virtual-network None\
+    --no-wait
+               

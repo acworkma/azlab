@@ -12,3 +12,4 @@ sku=Developer
 
 #APIMs
 apim="acapim"
+apim_ext="acaapimext"

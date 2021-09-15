@@ -10,7 +10,7 @@ az apim create\
     --publisher-name MSFT\
     --resource-group $rg\
     --sku-capacity 1\
-    --sku-name Premium\
+    --sku-name $sku\
     --virtual-network None\
     --no-wait
                

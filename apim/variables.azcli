@@ -6,5 +6,9 @@ loc="westus2"
 #resource group
 rg="apim"
 
+#skus
+sku=Developer
+#sku=Premium
+
 #APIMs
 apim="acapim"

@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "00a23c2d-5a13-48ab-9574-d3ce8b95d641"
+        },
+        "name": {
+            "value": "logicapp20220202"
+        },
+        "location": {
+            "value": "West US 3"
+        },
+        "hostingPlanName": {
+            "value": "ASP-20220202"
+        },
+        "serverFarmResourceGroup": {
+            "value": "20220202"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "storageAccountName": {
+            "value": "storageaccount20220202"
+        },
+        "sku": {
+            "value": "WorkflowStandard"
+        },
+        "skuCode": {
+            "value": "WS1"
+        },
+        "workerSize": {
+            "value": "3"
+        },
+        "workerSizeId": {
+            "value": "3"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "use32BitWorkerProcess": {
+            "value": true
+        }
+    }
+}

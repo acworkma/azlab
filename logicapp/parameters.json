@@ -2,44 +2,32 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "subscriptionId": {
-            "value": "00a23c2d-5a13-48ab-9574-d3ce8b95d641"
-        },
-        "name": {
-            "value": "logicapp20220202"
-        },
         "location": {
-            "value": "West US 3"
+            "value": "westus3"
         },
-        "hostingPlanName": {
-            "value": "ASP-20220202"
+        "environmentName": {
+            "value": "20220204logicapp"
         },
-        "serverFarmResourceGroup": {
-            "value": "20220202"
+        "projectName": {
+            "value": "20220204logicapp"
         },
-        "alwaysOn": {
-            "value": false
+        "logicAppName": {
+            "value": "20220204logicapp"
         },
-        "storageAccountName": {
-            "value": "storageaccount20220202"
+        "appServicePlanName": {
+            "value": "20220204logicapp"
         },
-        "sku": {
-            "value": "WorkflowStandard"
+        "storageName": {
+            "value": "20220204logicapp"
         },
-        "skuCode": {
-            "value": "WS1"
+        "kind": {
+            "value": "StorageV2"
         },
-        "workerSize": {
-            "value": "3"
+        "skuName": {
+            "value": "Standard_LRS"
         },
-        "workerSizeId": {
-            "value": "3"
-        },
-        "numberOfWorkers": {
-            "value": "1"
-        },
-        "use32BitWorkerProcess": {
-            "value": true
+        "skuTier": {
+            "value": "Standard"
         }
     }
 }

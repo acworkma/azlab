@@ -7,10 +7,5 @@ az group create --name 20220204logicapp --location westus3
 az deployment group create --resource-group 20220204logicapp --template-file template.json --parameters parameters.json
 
 
-
-
-
-
-
 #clean up
-az group delete --name 20220202logicapp
+az group delete --name 20220204logicapp

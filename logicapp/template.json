@@ -88,18 +88,7 @@
       },
       "properties": {
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('appServicePlanName'))]",
-        "hostNameSslStates": [
-            {
-                "name": "[concat(parameters('appServicePlanName'), '.azurewebsites.net')]",
-                "sslState": "SniEnabled",
-                "hostType": "Standard"
-            },
-            {
-                "name": "[concat(parameters('appServicePlanName'), '.scm.azurewebsites.net')]",
-                "sslState": "SniEnabled",
-                "hostType": "Repository"
-            }
-        ],
+         "httpsOnly": true,
         "siteConfig": {
           "netFrameworkVersion": "v4.6",
           "appSettings": [

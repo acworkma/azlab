@@ -20,7 +20,14 @@ cd websocket
 npm install ws
 ```
 - in one terminal window run server.js
+```
+node server.js
+```
 - in a second run cleint.js 
+```
+node client.js
+```
+- In the server window: Received message => Message From Client
+- In the client window: Hello! Message From Server!!
 
 
-A succesful test will show hello world 

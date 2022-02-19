@@ -11,3 +11,10 @@ sudo apt-get update
 sudo apt-get install nodejs
 sudo apt-get install npm
 ```
+
+## Simple websocket 
+- Add server.js and client.js to your Ubuntu host
+- in one terminal window run server.js
+- in a second run cleint.js 
+
+A succesful test will show hello world 

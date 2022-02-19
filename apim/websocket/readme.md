@@ -17,9 +17,9 @@ sudo apt-get install npm
 ```
 mkdir websocket
 cd websocket
+npm install ws
 vi server.js
 vi client.js
-npm install ws
 ```
 - in one terminal window run server.js
 ```

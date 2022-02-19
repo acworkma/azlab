@@ -10,6 +10,7 @@ Steps for a simple websocket test
 sudo apt-get update
 sudo apt-get install nodejs
 sudo apt-get install npm
+npm install ws
 ```
 
 ## Simple websocket 

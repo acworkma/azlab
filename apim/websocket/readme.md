@@ -32,3 +32,14 @@ node client.js
 
 https://www.js-tutorials.com/nodejs-tutorial/simple-websocket-example-with-nodejs/
 
+## Prep for APIM test
+- change client.js, const url, from local host to actual url of your host
+- make sure you have nsg rule to let 8080 in
+
+## APIM test
+- Follow the official docs to create a websocket API in APIM
+- https://docs.microsoft.com/en-us/azure/api-management/websocket-api
+- Test the API in APIM. You should receive the same success message: Hello! Message from Server 
+- Modify client.js one more time to use the new APIM Websocket URL 
+- run client.js and you again should see: Hellow Message From Server!!
+

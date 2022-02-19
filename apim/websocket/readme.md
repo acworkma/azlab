@@ -42,6 +42,4 @@ https://www.js-tutorials.com/nodejs-tutorial/simple-websocket-example-with-nodej
 - Follow the official docs to create a websocket API in APIM
 - https://docs.microsoft.com/en-us/azure/api-management/websocket-api
 - Test the API in APIM. You should receive the same success message: Hello! Message from Server 
-- Modify client.js, const url,  one more time to use the new APIM Websocket URL 
-- run client.js and you again should see: Hello! Message From Server!!
 

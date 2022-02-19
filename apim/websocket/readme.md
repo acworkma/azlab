@@ -10,12 +10,17 @@ Steps for a simple websocket test
 sudo apt-get update
 sudo apt-get install nodejs
 sudo apt-get install npm
-npm install ws
 ```
 
 ## Simple websocket 
 - Add server.js and client.js to your Ubuntu host
+```
+mkdir websocket
+cd websocket
+npm install ws
+```
 - in one terminal window run server.js
 - in a second run cleint.js 
+
 
 A succesful test will show hello world 

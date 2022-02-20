@@ -1,0 +1,15 @@
+#variables to be included in all files
+
+#primary location
+loc="westus2"
+
+#resource group
+rg="apim"
+
+#skus
+sku=Developer
+#sku=Premium
+
+#APIMs
+apim="acapim"
+apim_ext="acaapimext"

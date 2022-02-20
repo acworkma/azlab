@@ -1,0 +1,15 @@
+#variables
+source variables.azcli
+
+#create APIM
+echo "APIM External"
+
+az apim create\
+    --name $apim_ext\
+    --publisher-email adworkma@microsoft.com\
+    --publisher-name MSFT\
+    --resource-group $rg\
+    --sku-capacity 1\
+    --sku-name $sku\
+    --virtual-network External\
+    --no-wait

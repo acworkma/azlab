@@ -31,7 +31,7 @@ vi ldapserver.js
 ```
 node ldapserver.js
 ```
-- in a second run ldapsearch 
+- in a second terminal window run ldapsearch 
 ```
 ldapsearch -H ldap://localhost:1389 -x -D cn=root -w secret -LLL -b "o=myhost" cn=root
 ```
@@ -39,10 +39,19 @@ ldapsearch -H ldap://localhost:1389 -x -D cn=root -w secret -LLL -b "o=myhost" c
 - In the ldapsaerch window: You will bind and get a the root record
 
 ## Simple LDAP Client
-
+- Add ldapclient.js to your Ubuntu host
+```
+vi ldapclient.js
+```
+-  run ldapclient.js
+```
+node ldclient.js
+```
+- You will bind and see the search result
 
 Based on Joyent example
 http://ldapjs.org/examples.html 
+
 
 
 ## Prep for APIM test

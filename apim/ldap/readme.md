@@ -38,6 +38,9 @@ ldapsearch -H ldap://localhost:1389 -x -D cn=root -w secret -LLL -b "o=myhost" c
 - In the server window: Notice the service is running
 - In the ldapsaerch window: You will bind and get a the root record
 
+## Simple LDAP Client
+
+
 Based on Joyent example
 http://ldapjs.org/examples.html 
 

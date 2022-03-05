@@ -12,6 +12,8 @@ sudo apt-get install nodejs
 sudo apt-get install npm
 ```
 
+- Modify your NSG for 1389 
+
 ## LDAP Search
 - Install ldapsearch for testing
 ```
@@ -20,7 +22,8 @@ sudo apt install ldap-utils
 
 ## Simple ldap server
 - Install ldapjs
-- Add ldapserver.js to your Ubuntu host
+- Add ldapserver.js to your Ubuntu host 
+- Set server.listen at the end of the file to your host IP!
 ```
 mkdir ldap
 cd ldap
@@ -33,13 +36,14 @@ node ldapserver.js
 ```
 - in a second terminal window run ldapsearch 
 ```
-ldapsearch -H ldap://localhost:1389 -x -D cn=root -w secret -LLL -b "o=myhost" cn=root
+ldapsearch -H ldap://<yourhost>:1389 -x -D cn=root -w secret -LLL -b "o=myhost" cn=root
 ```
 - In the server window: Notice the service is running
 - In the ldapsaerch window: You will bind and get a the root record
 
 ## Simple LDAP Client
 - Add ldapclient.js to your Ubuntu host
+- make sure to set bind url to your host IP! 
 ```
 vi ldapclient.js
 ```
@@ -48,6 +52,8 @@ vi ldapclient.js
 node ldclient.js
 ```
 - You will bind and see the search result
+
+
 
 Based on Joyent example
 http://ldapjs.org/examples.html 

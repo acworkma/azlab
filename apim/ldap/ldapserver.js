@@ -204,6 +204,6 @@ server.search('o=myhost', pre, (req, res, next) => {
 
 
 // LDAP "standard" listens on 389, but whatever.
-server.listen(1389, '127.0.0.1', () => {
+server.listen(1389, '172.18.0.7', () => {
   console.log('/etc/passwd LDAP server up at: %s', server.url);
 });

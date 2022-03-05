@@ -39,7 +39,7 @@ node ldapserver.js
 ldapsearch -H ldap://<yourhost>:1389 -x -D cn=root -w secret -LLL -b "o=myhost" cn=root
 ```
 - In the server window: Notice the service is running
-- In the ldapsaerch window: You will bind and get a the root record
+- In the ldapsaerch window: You will bind and get the root record
 
 ## Simple LDAP Client
 - Add ldapclient.js to your Ubuntu host
@@ -58,6 +58,7 @@ node ldclient.js
 Based on Joyent example
 http://ldapjs.org/examples.html 
 
+##Azure Function
 
 
 ## Prep for APIM test

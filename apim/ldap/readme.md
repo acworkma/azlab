@@ -1,8 +1,6 @@
 # LDAP
 Steps for a simple LDAP test
 
-Based on Joyent example
-http://ldapjs.org/examples.html 
 
 ## Ubuntu VM
 - Build an Ubuntu VM on the same VNet as APIM
@@ -16,32 +14,33 @@ sudo apt-get install npm
 
 ## LDAP Search
 - Install ldapsearch for testing
-- Install ldapjs
 ```
 sudo apt install ldap-utils
-npm install ldapjs
 ````
 
 ## Simple ldap server
+- Install ldapjs
 - Add ldapserver.js to your Ubuntu host
 ```
 mkdir ldap
 cd ldap
-vi server.js
-vi client.js
+npm install ldapjs
+vi ldapserver.js
 ```
-- in one terminal window run server.js
+- in one terminal window run ldapserver.js
 ```
-node server.js
+node ldapserver.js
 ```
-- in a second run cleint.js 
+- in a second run ldapsearch 
 ```
-node client.js
+ldapsearch -H ldap://localhost:1389 -x -D cn=root -w secret -LLL -b "o=myhost" cn=root
 ```
-- In the server window: Received message => Message From Client
-- In the client window: Hello! Message From Server!!
+- In the server window: Notice the service is running
+- In the ldapsaerch window: You will bind and get a the root record
 
-https://www.js-tutorials.com/nodejs-tutorial/simple-websocket-example-with-nodejs/
+Based on Joyent example
+http://ldapjs.org/examples.html 
+
 
 ## Prep for APIM test
 - change client.js, const url, from local host to actual url of your host

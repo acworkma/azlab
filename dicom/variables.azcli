@@ -1,0 +1,7 @@
+#variables to be included in all files
+
+#primary location
+loc="westus2"
+
+#resource group
+rg="20220310-dicom"

@@ -7,7 +7,12 @@ Create an Azure enviroment that allows for the testing of different DICOM deploy
 - variables.azcli - defines variables to be included in other scripts
 - resourcegroup.azcli - creates the resource group
 - network.azcli - creates a vnet/subnet
+- storage.azcli - create the Storage account
 - keyvault.azcli - creates a key vault
+- appserviceplan.azcli - creates the app service plan
+- app.azcli - creates the App Service
+- function.azcli - create the Function Service
+- 
 - 
 - 
 - App Service

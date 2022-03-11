@@ -9,6 +9,7 @@ Create an Azure enviroment that allows for the testing of different DICOM deploy
 - network.azcli - creates a vnet/subnet
 - storage.azcli - create the Storage account
 - keyvault.azcli - creates a key vault
+- appinsight.azcli - creates app insight
 - appserviceplan.azcli - creates the app service plan
 - app.azcli - creates the App Service
 - function.azcli - create the Function Service

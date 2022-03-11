@@ -4,7 +4,7 @@ source variables.azcli
 echo "Storage"
 
 az storage account create \
-  --name storage$rg \
+  --name storage$rn \
   --resource-group $rg \
   --location $loc \
   --sku Standard_LRS \

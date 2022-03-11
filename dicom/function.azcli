@@ -1,10 +1,11 @@
 #variables
 source variables.azcli
 
-echo "App"
+echo "Function"
 
 az webapp create \
   --resource-group $rg \
   --plan appserviceplan$rg  \
-  --name appservice$rg \
+  --name function$rg \
+  --storage-account storage$rg \
   --output none

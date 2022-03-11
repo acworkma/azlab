@@ -1,0 +1,11 @@
+#variables
+source variables.azcli
+
+echo "Storage"
+
+az storage account create \
+  --name storage$rg \
+  --resource-group $rg \
+  --location $loc \
+  --sku Standard_LRS \
+  --output none

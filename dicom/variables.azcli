@@ -4,4 +4,4 @@
 loc="westus2"
 
 #resource group
-rg="20220310-dicom"
+rg="20220310dicom"

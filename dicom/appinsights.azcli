@@ -1,10 +1,12 @@
+#https://docs.microsoft.com/en-us/cli/azure/monitor/app-insights/component?view=azure-cli-latest#az-monitor-app-insights-component-create
+
 #variables
 source variables.azcli
 
 echo "App Insights"
 
 az monitor app-insights component create \
-  --app appinsight$rn \
+  --app appinsights$rn \
   --location $loc \
   --resource-group $rg \
   --output none

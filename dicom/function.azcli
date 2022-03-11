@@ -3,9 +3,10 @@ source variables.azcli
 
 echo "Function"
 
-az webapp create \
+az functionapp create \
   --resource-group $rg \
   --plan appserviceplan$rg  \
   --name function$rg \
   --storage-account storage$rg \
+  --functions-version 3 \
   --output none

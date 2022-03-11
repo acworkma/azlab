@@ -3,6 +3,8 @@
 #variables
 source variables.azcli
 
+echo "Network"
+
 #create a nsg and vnet/subnet
 
 #create nsg

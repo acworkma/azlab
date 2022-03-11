@@ -3,5 +3,7 @@
 #variables
 source variables.azcli
 
+echo "Key Vault"
+
 #create the vault
 az keyvault create --location $loc --name keyvault-$rg --resource-group $rg --sku standard

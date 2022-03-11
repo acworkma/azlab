@@ -1,0 +1,10 @@
+#variables
+source variables.azcli
+
+echo "App Service Plan"
+
+az appservice plan create \
+  --resource-group $rg \
+  --name appserviceplan-$rg \
+  --sku S1 \
+  --output none

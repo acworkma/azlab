@@ -1,0 +1,10 @@
+#variables
+source variables.azcli
+
+echo "App"
+
+az webapp create \
+  --resource-group $rg \
+  --plan appserviceplan-$rg  \
+  --name appservice-$rg \
+  --output none

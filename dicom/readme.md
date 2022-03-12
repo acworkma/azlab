@@ -15,9 +15,10 @@ Create an Azure enviroment that allows for the testing of different DICOM deploy
 - function.azcli - creates the Function Service
 - sqlserver.azcli - creates the sql server
 - sqldb.azcli - creates the sqldb
-- 
-- 
-- <!---
+
+
+
+<!---
 - App Service
 - App Service Plan
 - Application Insight

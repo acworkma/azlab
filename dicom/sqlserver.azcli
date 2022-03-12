@@ -1,0 +1,14 @@
+# https://docs.microsoft.com/en-us/cli/azure/sql/server?view=azure-cli-latest
+
+#variables
+source variables.azcli
+
+echo "SQL Server"
+
+az sql server create \
+  --name sqlserver$rn \
+  --resource-group $rg \
+  --location EastUS2 \
+  --admin-user sqluser \
+  --admin-password <> \
+  --output none

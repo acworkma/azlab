@@ -12,10 +12,12 @@ Create an Azure enviroment that allows for the testing of different DICOM deploy
 - appinsight.azcli - creates app insight
 - appserviceplan.azcli - creates the app service plan
 - app.azcli - creates the App Service
-- function.azcli - create the Function Service
+- function.azcli - creates the Function Service
+- sqlserver.azcli - creates the sql server
+- sqldb.azcli - creates the sqldb
 - 
 - 
-- 
+- <!---
 - App Service
 - App Service Plan
 - Application Insight
@@ -23,3 +25,4 @@ Create an Azure enviroment that allows for the testing of different DICOM deploy
 - Key Vault - KP ARM
 - Azure SQL - KP ARM
 - Storage Account - KP ARM
+--->

@@ -18,7 +18,20 @@ nsg=nsg$rn
 vnet=vnet$rn
 subnet=subnet$rn
 
-# storage
+#storage
 storage=storage$rn
 
+#keyvault
+keyvault=keyvault$rn
 
+#appinsights
+appinsights=appinsights$rn
+
+#app Service
+appserviceplan=appserviceplan$rn
+appservice=appservice$rn 
+function=function$rn
+
+#sql
+sqlserver=sqlserver$rn
+sqldb=sqldb$rn

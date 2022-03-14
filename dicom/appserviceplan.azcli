@@ -7,6 +7,6 @@ echo "App Service Plan"
 
 az appservice plan create \
   --resource-group $rg \
-  --name appserviceplan$rn \
+  --name $appserviceplan \
   --sku S1 \
-  --output none
+  --output $output

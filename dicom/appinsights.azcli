@@ -6,7 +6,7 @@ source variables.azcli
 echo "App Insights"
 
 az monitor app-insights component create \
-  --app appinsights$rn \
+  --app $appinsights \
   --location $loc \
   --resource-group $rg \
-  --output none
+  --output $output

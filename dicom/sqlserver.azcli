@@ -6,9 +6,9 @@ source variables.azcli
 echo "SQL Server"
 
 az sql server create \
-  --name sqlserver$rn \
+  --name $sqlserver \
   --resource-group $rg \
   --location EastUS2 \
   --admin-user sqluser \
   --admin-password <> \
-  --output none
+  --output $output

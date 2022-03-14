@@ -8,7 +8,7 @@ echo "Key Vault"
 #create the vault
 az keyvault create \
   --location $loc \
-  --name keyvault$rn \
+  --name $keyvault \
   --resource-group $rg \
   --sku standard \
-  --output none
+  --output $output

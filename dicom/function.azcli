@@ -7,9 +7,9 @@ echo "Function"
 
 az functionapp create \
   --resource-group $rg \
-  --plan appserviceplan$rn  \
-  --name function$rn \
-  --storage-account storage$rn \
-  --app-insights appinsights$rn \
+  --plan $appserviceplan  \
+  --name $function \
+  --storage-account $storage \
+  --app-insights $appinsights \
   --functions-version 3 \
-  --output none
+  --output $output

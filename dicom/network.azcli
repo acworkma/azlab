@@ -9,17 +9,17 @@ echo "Network"
 
 #create nsg
 az network nsg create \
-  --name nsg$rn \
+  --name $nsg \
   --resource-group $rg \
   --location $loc \
-  --output none
+  --output $output
 
 az network vnet create \
-  --name vnet$rn \
+  --name $vnet \
   --resource-group $rg \
   --location $loc \
-  --address-prefixes 10.0.0.0/24 \
-  --subnet-name subnet$rn \
+  --address-prefixes 10.0.0.0/16 \
+  --subnet-name $subnet \
   --subnet-prefixes 10.0.0.0/24 \
-  --network-security-group nsg$rg \
-  --output none
+  --network-security-group $nsg \
+  --output $output

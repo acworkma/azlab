@@ -7,4 +7,4 @@ echo "Resource Group"
 az group create \
   --location $loc \
   --name $rg \
-  --output none
+  --output $output

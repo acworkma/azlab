@@ -1,10 +1,24 @@
-#variables to be included in all files
+# variables to be included in all files
+# goal is to name all resources as we don't know if we are building or using a provided resource
+
+#output json is default, none will suppress 
+output="json"
 
 #primary location
 loc="westus2"
 
-#resource group
-rg="20220310dicom"
-
 #resource name
-rn="220310dicom"
+rn="220314dicom"
+
+#resource group
+rg=$rn
+
+#network
+nsg=nsg$rn
+vnet=vnet$rn
+subnet=subnet$rn
+
+# storage
+storage=storage$rn
+
+

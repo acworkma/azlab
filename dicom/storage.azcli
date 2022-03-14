@@ -1,11 +1,19 @@
+# https://docs.microsoft.com/en-us/cli/azure/storage/account?view=azure-cli-latest#az-storage-account-create
+
 #variables
 source variables.azcli
 
 echo "Storage"
 
 az storage account create \
-  --name storage$rn \
+  --name $storage \
   --resource-group $rg \
   --location $loc \
   --sku Standard_LRS \
-  --output none
+  --min-tls-version TLS1_2 \
+  --public-network-access Disabled \
+  --bypass AzureServices \
+  --default-action Deny \
+  --vnet-name $vnet \
+  --subnet $subnet \
+  --output $output

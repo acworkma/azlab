@@ -1,0 +1,15 @@
+#https://docs.microsoft.com/en-us/cli/azure/functionapp?view=azure-cli-lates
+
+#variables
+source variables.azcli
+
+echo "Function"
+
+az functionapp create \
+  --resource-group $rg \
+  --plan $appserviceplan  \
+  --name $function \
+  --storage-account $storage \
+  --app-insights $appinsights \
+  --functions-version 3 \
+  --output $output

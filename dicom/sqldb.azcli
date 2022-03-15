@@ -1,0 +1,13 @@
+# https://docs.microsoft.com/en-us/cli/azure/sql?view=azure-cli-latest
+
+#variables
+source variables.azcli
+
+echo "SQL DB"
+
+az sql db create \
+  --name $sqldb \
+  --resource-group $rg \
+  --server $sqlserver \
+  --service-objective S1 \
+  --output $output

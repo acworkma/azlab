@@ -1,0 +1,25 @@
+#network
+
+#variables
+source variables.azcli
+
+echo "Network"
+
+#create a nsg and vnet/subnet
+
+#create nsg
+az network nsg create \
+  --name $nsg \
+  --resource-group $rg \
+  --location $loc \
+  --output $output
+
+az network vnet create \
+  --name $vnet \
+  --resource-group $rg \
+  --location $loc \
+  --address-prefixes 10.0.0.0/16 \
+  --subnet-name $subnet \
+  --subnet-prefixes 10.0.0.0/24 \
+  --network-security-group $nsg \
+  --output $output

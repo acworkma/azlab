@@ -1,0 +1,12 @@
+#https://docs.microsoft.com/en-us/cli/azure/appservice?view=azure-cli-latest
+
+#variables
+source variables.azcli
+
+echo "App Service Plan"
+
+az appservice plan create \
+  --resource-group $rg \
+  --name $appserviceplan \
+  --sku S1 \
+  --output $output

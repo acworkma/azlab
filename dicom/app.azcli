@@ -1,0 +1,12 @@
+#https://docs.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest
+
+#variables
+source variables.azcli
+
+echo "App"
+
+az webapp create \
+  --resource-group $rg \
+  --plan $appserviceplan \
+  --name $appservice \
+  --output $output

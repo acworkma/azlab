@@ -1,0 +1,14 @@
+#key vault
+
+#variables
+source variables.azcli
+
+echo "Key Vault"
+
+#create the vault
+az keyvault create \
+  --location $loc \
+  --name $keyvault \
+  --resource-group $rg \
+  --sku standard \
+  --output $output

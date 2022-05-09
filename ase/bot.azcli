@@ -1,0 +1,17 @@
+#https://docs.microsoft.com/en-us/cli/azure/bot?view=azure-cli-latest
+
+#variables
+source variables.azcli
+
+echo "Building Bot"
+
+az bot create \
+  --appid [] \
+  --kind webapp \
+  --name $rg \
+  --resource-group $rg \
+  --echo true \
+  --lang Csharp \
+  --sku F0 \
+  --password $pass \
+  --output none

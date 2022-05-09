@@ -1,0 +1,13 @@
+#variables
+source variables.azcli
+
+echo "Building VNet"
+#create vnet
+az network vnet create \
+  --name $vnet \
+  --resource-group $rg \
+  --location $loc \
+  --address-prefix 10.64.0.0/16 \
+  --subnet-name $subnet \
+  --subnet-prefixes 10.64.0.0/24 \
+  --output none

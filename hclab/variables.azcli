@@ -7,5 +7,8 @@ loc="westus2"
 #resource group
 rg="hclab"
 
-#servicebus
+#servicebus namespace
 namespace="hclab-sb-namespace"
+
+#namespace queue
+queue="hclab-queue"

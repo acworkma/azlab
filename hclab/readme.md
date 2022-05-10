@@ -1,5 +1,4 @@
-# APIM
-HC Lab 
+# HC LAB
 
 ## Objective
 Create an Azure enviroment that allows for the testing of different HC components
@@ -7,7 +6,8 @@ Create an Azure enviroment that allows for the testing of different HC component
 ## Files
 - variables.azcli - defines variables to be included in other scripts
 - resourcegroup.azcli - creates the resource group
-- apim.azcli - creates an apim
+- servicebus.azcli - creates a service bus
 - apim_del.azcli - deletes apim
 - apim_ext.azcli - creates an external api
 - apim_int.azcli - creates an internal apim
+

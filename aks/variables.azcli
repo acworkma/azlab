@@ -3,6 +3,9 @@
 #primary location
 loc="westus2"
 
+#output json is default, none will suppress 
+output="json"
+
 #resource group
 rg="aksaz"
 

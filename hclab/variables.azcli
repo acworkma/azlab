@@ -1,0 +1,11 @@
+#variables to be included in all files
+
+output="json"
+#primary location
+loc="westus2"
+
+#resource group
+rg="hclab"
+
+#servicebus
+servicebus="servicebushclab"

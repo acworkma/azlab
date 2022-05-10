@@ -4,6 +4,6 @@ source variables.azcli
 #create the service bus
 az servicebus namespace create \
   --resource-group $rg \
-  --name $servicebus \
+  --name $namespace \
   --location $loc \
   --output $output

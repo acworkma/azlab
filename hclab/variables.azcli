@@ -8,4 +8,4 @@ loc="westus2"
 rg="hclab"
 
 #servicebus
-servicebus="servicebushclab"
+namespace="hclab-sb-namespace"

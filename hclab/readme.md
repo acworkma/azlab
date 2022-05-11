@@ -11,3 +11,7 @@ Create an Azure enviroment that allows for the testing of different HC component
 - namespace.azcli - creates a service bus namespace
 - queue.azcli - creates a queue in the service bus namespace
 - connectionstring.azcli - returns the connections string
+- Node - directory for sample read/write node app
+    - send.js - sends messages to the namespace
+    - recieve.js read messages from the namespace
+    - Add connection string and namespace at the top of both files

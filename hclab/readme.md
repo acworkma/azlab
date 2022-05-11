@@ -15,6 +15,10 @@ Create an Azure enviroment that allows for the testing of different HC component
 - queue.azcli - creates a queue in the service bus namespace
 - connectionstring.azcli - returns the connections string
 - node-sb - directory for sample read/write node app for ServiceBus
-    - send.js - sends messages to the namespace
-    - recieve.js read messages from the namespace
-    - Add connection string and namespace at the top of both files
+  - install node components
+    - npm install @azure/service-bus
+    - npm install dotenv --save
+  - rename .env.sample to .env
+    - add in connection string and queue name
+  - send.js - sends messages to the namespace
+  - recieve.js read messages from the namespace

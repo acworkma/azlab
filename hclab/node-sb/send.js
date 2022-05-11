@@ -1,10 +1,12 @@
+require('dotenv').config();
+
 const { ServiceBusClient } = require("@azure/service-bus");
 
 // connection string to your Service Bus namespace
-const connectionString = ""
+const connectionString = process.env.connection_string
 
 // name of the queue
-const queueName = "hclab-queue"
+const queueName = process.env.queue_name
 
 const messages = [
 	{ body: "Albert Einstein" },

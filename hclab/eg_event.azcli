@@ -1,0 +1,10 @@
+#variables
+source variables.azcli
+
+#setup the call
+endpoint=$(az eventgrid topic show --name $topicname -g $rg --query "endpoint" --output tsv)
+key=$(az eventgrid topic key list --name $topicname -g $rg --query "key1" --output tsv)
+event='[ {"id": "'"$RANDOM"'", "eventType": "recordInserted", "subject": "myapp/vehicles/motorcycles", "eventTime": "'`date +%Y-%m-%dT%H:%M:%S%z`'", "data":{ "make": "Ducati", "model": "Monster"},"dataVersion": "1.0"} ]'
+
+#call the api
+curl -X POST -H "aeg-sas-key: $key" -d "$event" $endpoint

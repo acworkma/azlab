@@ -8,23 +8,32 @@ output="json"
 #append below on next build
 rn="220511hclab"
 
+
 #primary location
 loc="westus2"
 
 #resource group
-rg="hclab"
+rg="$rn"
+
 
 #servicebus namespace
-namespace="hclab-sb-namespace"
+namespace="namespace$rn"
 
 #namespace queue
-queue="hclab-queue"
+queue="queue$rn"
+
 
 #event grid topic
-topicname="hclab-topic"
+topicname="topic$rn"
 
 #event grid web app
-sitename="hclab-webapp"
+sitename="webapp$rn"
 
 #event grid web app url
 weburl="https://$sitename.azurewebsites.net/api/updates"
+
+#subscription ID to bind to for event grid sample
+subid=""
+
+#name of the event to subscribe to
+eventname="event$rn"

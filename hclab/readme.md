@@ -8,6 +8,7 @@ Create an Azure enviroment that allows for the testing of different HC component
 
 - variables.azcli - defines variables to be included in other scripts
 - resourcegroup.azcli - creates the resource group
+- cleanup.azcli - deletes the resource group and all resources in it
 
 ### Azure Service Bus
 
@@ -27,3 +28,5 @@ Create an Azure enviroment that allows for the testing of different HC component
 
 - eg_topic.azcli - creates an event grib topic
 - eg_webapp.azcli - deploy a sample app to view the event grid
+- eg_subscribe.azcli - subscribe to the topic 
+- eg_event.azcli - send an event

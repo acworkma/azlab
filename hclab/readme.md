@@ -26,7 +26,7 @@ Create an Azure enviroment that allows for the testing of different HC component
 
 ### Azure Event Grid
 
-- eg_topic.azcli - creates an event grib topic
+- eg_topic.azcli - creates an event grid topic
 - eg_webapp.azcli - deploy a sample app to view the event grid
 - eg_subscribe.azcli - subscribe to the topic 
 - eg_event.azcli - send an event

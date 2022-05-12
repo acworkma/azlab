@@ -5,12 +5,11 @@ output="json"
 
 #build a unique name to append to all resource
 #resource name
-#append below on next build
 rn="220511hclab"
 
 
 #primary location
-loc="westus2"
+loc="westus3"
 
 #resource group
 rg="$rn"
@@ -33,7 +32,7 @@ sitename="webapp$rn"
 weburl="https://$sitename.azurewebsites.net/api/updates"
 
 #subscription ID to bind to for event grid sample
-subid=""
+subid="ecce4170-5404-4308-99df-9c9237c5a0ad"
 
 #name of the event to subscribe to
 eventname="event$rn"

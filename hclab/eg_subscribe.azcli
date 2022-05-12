@@ -1,0 +1,9 @@
+#variables
+source variables.azcli
+
+#subscribe to the topic
+az eventgrid event-subscription create \
+  --source-resource-id "/subscriptions/$subid/resourceGroups/$rg/providers/Microsoft.EventGrid/topics/$topicname" \
+  --name $eventname \
+  --endpoint $weburl \
+  --output $output

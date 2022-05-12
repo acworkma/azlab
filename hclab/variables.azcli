@@ -1,0 +1,38 @@
+#variables to be included in all files
+
+#output json is default, none will suppress 
+output="json"
+
+#build a unique name to append to all resource
+#resource name
+rn="220511hclab"
+
+
+#primary location
+loc="westus3"
+
+#resource group
+rg="$rn"
+
+
+#servicebus namespace
+namespace="namespace$rn"
+
+#namespace queue
+queue="queue$rn"
+
+
+#event grid topic
+topicname="topic$rn"
+
+#event grid web app
+sitename="webapp$rn"
+
+#event grid web app url
+weburl="https://$sitename.azurewebsites.net/api/updates"
+
+#subscription ID to bind to for event grid sample
+subid="ecce4170-5404-4308-99df-9c9237c5a0ad"
+
+#name of the event to subscribe to
+eventname="event$rn"

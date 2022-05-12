@@ -1,0 +1,10 @@
+#variables
+source variables.azcli
+
+#returns the connection string for the namespace 
+az servicebus namespace authorization-rule keys list \
+  --resource-group $rg \
+  --namespace-name $namespace \
+  --name RootManageSharedAccessKey \
+  --query primaryConnectionString \
+  --output tsv

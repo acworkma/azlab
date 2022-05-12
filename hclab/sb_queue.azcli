@@ -1,0 +1,9 @@
+#variables
+source variables.azcli
+
+#create the queue
+az servicebus queue create \
+--resource-group $rg \
+--namespace-name $namespace \
+--name $queue \
+--output $output

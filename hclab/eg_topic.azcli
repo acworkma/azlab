@@ -1,0 +1,9 @@
+#variables
+source variables.azcli
+
+#great event grid topic
+az eventgrid topic create \
+  --name $topicname \
+  --location $loc \
+  --resource-group $rg \
+  --output $output

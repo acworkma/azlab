@@ -1,0 +1,8 @@
+#variables
+source variables.azcli
+
+#create the resource group
+az group create \
+  --location $loc \
+  --name $rg \
+  --output $output

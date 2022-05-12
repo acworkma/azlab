@@ -1,6 +1,13 @@
 #variables to be included in all files
 
+#output json is default, none will suppress 
 output="json"
+
+#build a unique name to append to all resource
+#resource name
+#append below on next build
+rn="220511hclab"
+
 #primary location
 loc="westus2"
 
@@ -12,3 +19,12 @@ namespace="hclab-sb-namespace"
 
 #namespace queue
 queue="hclab-queue"
+
+#event grid topic
+topicname="hclab-topic"
+
+#event grid web app
+sitename="hclab-webapp"
+
+#event grid web app url
+weburl="https://$sitename.azurewebsites.net/api/updates"

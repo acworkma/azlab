@@ -1,0 +1,9 @@
+#variables
+source variables.azcli
+
+#create sample web app to view event grid
+az deployment group create \
+  --resource-group $rg \
+  --template-uri "https://raw.githubusercontent.com/Azure-Samples/azure-event-grid-viewer/master/azuredeploy.json" \
+  --parameters siteName=$sitename hostingPlanName=viewerhost \
+  --output $output
